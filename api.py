@@ -36,6 +36,11 @@ def get_enketo_edit_url(_id):
         print(f"Error for _id {_id}: {e}")
         return None
 
+# Root route
+@app.route('/')
+def home():
+    return "Welcome to the Kobo API! Use /generate_link with an _id parameter."
+
 # API endpoint
 @app.route("/generate_link", methods=["GET"])
 def generate_link():
