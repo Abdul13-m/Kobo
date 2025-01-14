@@ -39,7 +39,7 @@ def get_enketo_edit_url(_id):
 # Root route
 @app.route('/')
 def home():
-    return "Welcome to the Kobo API! Use /generate_link with an _id parameter."
+    return "Welcome to the Kobo API! Use the /generate_link endpoint with an _id parameter to generate a link."
 
 # API endpoint
 @app.route("/generate_link", methods=["GET"])
